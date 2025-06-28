@@ -10,9 +10,179 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .section1{
+            height: 100vh;
+            position: relative;
+            background-color: #e5e5e5;
+        }
+        .s1d1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .fb{
+            z-index: 2;
+            position:absolute;
+            top: 0;
+            margin-left: -640px;
+            margin-top: 75px;
+        }
+        .ozw{
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            margin-left: -680px;
+            margin-top: 350px;
+        }
+        .sb{
+            z-index: 4;
+            position:absolute;
+            top: 0;
+            margin-left: -470px;
+            margin-top: 70px;
+        }
+        .divflx{
+            position: absolute;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 80px;
+            padding-left: 37px;
+            padding-right: 30px;
+            top: 30px;
+            width: 100vw;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+        }
+        nav{
+            display: flex;
+            gap: 30px;
+            padding-left: 80px;
+            margin-left: -60px;
+        }
+        form{
+            background-color: grey;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 200px;
+            margin-left: 160px;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+            border:none;
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.439);
+            padding: 8px 40px 8px 30px;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            position: absolute;
+            height: 100%;
+            cursor: pointer;
+            border: none;
+            background: none;
+            width: 20px;
+            left: 3px;
+            top:2px;
+        }
+        .search-mark{
+            color: grey;
+        }
+        .btn{
+            position: absolute;
+            background:linear-gradient(#DE3500,#DC5C34);
+            height: 90px;
+            width: 160px;
+            border-radius: 300px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            margin-top: 690px;
+            margin-left: 40px;
+            z-index: 100;
+            bottom: 0;
+            border: none;
+            box-shadow: 2px 0 #DC5C34;
+        }
+        .last{
+            position: absolute;
+            background:linear-gradient(#DE3500,#DC5C34);
+            height: 160px;
+            width: 240px;
+            border-radius: 30px;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            border: none;
+            box-shadow: 2px 0 #DC5C34;
+        }
+        .lasti{
+            position: absolute;
+            z-index: 101;
+            bottom: 25px;
+            right: 10px;
+        }
     </style>
 </head>
 <body>
-    
+    <section class="section1">
+        <div class="s1d1">
+            <div>
+                <img src="cercle.png" width="500px">
+            </div>
+            <div>
+                <img src="firstboot.png" class="fb" width="550px">
+            </div>
+            <div><img src="OZWEEGO.png" class="ozw" width="900px"></div>
+            <div><img src="secondboot.png" width="700px" class="sb"></div>
+        </div>
+        <div class="divflx">
+            <div><img src="logo-adidas.png" width="110px"></div>
+            <nav>
+                <a href="#">NEW</a>
+                <a href="#">MENS</a>
+                <a href="#">WOMENS</a>
+                <a href="#">SPORTS</a>
+                <a href="#">BRANDS</a>
+                <a href="#">RELEASE</a>
+                <a href="#">DATES</a>
+            </nav>
+            <form>
+                <input type="search" placeholder="Search...">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-mark" aria-hidden="true" width="20px"
+                        viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </form>
+            <div>
+                <h2 style="margin-left: -60px;">Cart</h2>
+            </div>
+        </div>
+            <div>
+                <div><button class="btn">Shop Now</button></div>
+            </div>
+            <div>
+                <div class="last"></div>
+            </div>
+            <div>
+                <div><img src="3rdboot.png" class="lasti" width="380px"></div>
+            </div>
+        </div>
+        </section>
 </body>
 </html>
